@@ -1,0 +1,45 @@
+.navigator_line {
+  width: 50vw;
+  height: 0px;
+  border-bottom: 2px solid rgba(82, 22, 206, 1);
+  opacity: 1;
+  position: relative;
+  left: 4px;
+}
+.circle {
+  width: 14px;
+  height: 14px;
+  background: rgba(0, 0, 0, 1);
+  border: 2px solid rgba(82, 22, 206, 1);
+  border-radius: 50%;
+  opacity: 1;
+  margin: 4px;
+}
+.page_text {
+  width: 28px;
+  height: 14px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+.navigator_container {
+  position: absolute;
+  right: 0px;
+  top: 37px;
+  display: flex;
+  justify-content: flex-start;
+}
+.link_container {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  position: absolute;
+  bottom: -26px;
+}
+.page_link {
+  width: 30px;
+  justify-content: center;
+}

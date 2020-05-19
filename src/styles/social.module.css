@@ -1,0 +1,31 @@
+.social_container {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.button_bg {
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(
+    154deg,
+    rgba(120, 241, 179, 0.8) 0%,
+    rgba(213, 40, 175, 0.8) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_mask {
+  width: 49px;
+  height: 49px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
