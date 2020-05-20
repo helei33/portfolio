@@ -1,38 +1,42 @@
 [
   {
     "value": {
+      "id": 1,
       "name": "Coodo Pay",
       "github": "https://github.com/troyeguo/coodo-pay",
-      "detail": "为独立开发者和站长打造的会员支付解决方案，前端基于 React + Redux + Ant Design，后端基于 Nodejs + Koa2 + Mongodb",
+      "detail": "前端基于 React + AntD，后端基于Koa2 + Mongodb",
       "description": "一个基于React 和 Koa2开发的在线支付系统",
-      "illustration": "/assets/images/coodo.png"
+      "illustration": "/images/illustration/coodo.png"
     }
   },
   {
     "value": {
+      "id": 2,
       "name": "Koodo Reader",
       "github": "https://github.com/troyeguo/koodo-reader",
       "detail": "一个开源免费的 Epub 阅读器，支持桌面版和网页版",
       "description": "一个基于 React 和 Electron 开发的 Epub 阅读器",
-      "illustration": "/assets/images/koodo.png"
+      "illustration": "/images/illustration/coodo.png"
     }
   },
   {
     "value": {
+      "id": 3,
       "name": "Soundify",
       "github": "https://github.com/troyeguo/soundify",
-      "detail": "A SPA Spotify web player written in Next.js",
-      "description": "A SPA Spotify web player written in Next.js",
-      "illustration": "/assets/images/soundify.png"
+      "detail": "基于 Spotify API 开发的网页音乐播放器",
+      "description": "一个基于 Spotify API 开发的网页音乐播放器",
+      "illustration": "/images/illustration/coodo.png"
     }
   },
   {
     "value": {
+      "id": 4,
       "name": "Koodo Reader 网站",
       "github": "https://github.com/troyeguo/website-for-koodo-reader",
-      "detail": "使用 Next.js 实现服务端渲染，使用 Bootstrap 实现响应式，使用 next-i18next 实现国际化，使用 aos 实现页面动画",
-      "description": "Koodo Reader的官网，基于Next.js + Bootstrap开发",
-      "illustration": "/assets/images/koodo-site.png"
+      "detail": "使用 Next.js 实现SSR，使用 Bootstrap 实现响应式",
+      "description": "基于Next.js和Bootstrap开发的产品介绍网站",
+      "illustration": "/images/illustration/coodo.png"
     }
   }
 ]

@@ -9,8 +9,8 @@
 /coverage
 
 # gatsby.js
-#/.cache/
-#/public/
+/.cache/
+/public/
 /cache
 
 # production

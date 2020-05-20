@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import Social from "../components/social";
 import Navagator from "../components/navigator";
+import Introduction from "../components/introduction";
 import { Link } from "gatsby";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
           />
         </Link>
         <Navagator />
+        <Introduction />
         <Social />
       </div>
     </Layout>

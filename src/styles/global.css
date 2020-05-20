@@ -1,0 +1,41 @@
+.project-title-container {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  max-height: 500px;
+}
+.project-title-bg {
+  position: relative;
+  right: 190px;
+}
+.project-title-text {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 96px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: relative;
+  bottom: 270px;
+  left: 30px;
+}
+.design-title-container {
+  position: absolute;
+  left: -200px;
+  bottom: 580px;
+  max-height: 500px;
+  transform: rotateZ(280deg) scale(1.1);
+}
+.design-title-bg {
+  position: relative;
+  right: 190px;
+}
+.design-title-text {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 96px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 96px;
+  left: 211px;
+}

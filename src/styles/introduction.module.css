@@ -1,0 +1,10 @@
+.intro_container {
+  position: absolute;
+  top: calc(50% - 125px);
+  left: calc(50% - 200px);
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 77px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}

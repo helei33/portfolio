@@ -3,8 +3,6 @@
   height: 0px;
   border-bottom: 2px solid rgba(82, 22, 206, 1);
   opacity: 1;
-  position: relative;
-  left: 4px;
 }
 .circle {
   width: 14px;
@@ -38,8 +36,10 @@
   width: 300px;
   position: absolute;
   bottom: -26px;
+  left: -4px;
 }
 .page_link {
   width: 30px;
   justify-content: center;
+  cursor: pointer;
 }
