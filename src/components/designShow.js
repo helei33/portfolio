@@ -32,7 +32,9 @@ export default (props) => {
         className={styles.prev}
         size="2rem"
         onClick={() => {
-          setIndex(index - 1);
+          if (index > 0) {
+            setIndex(index - 1);
+          }
         }}
       />
 
@@ -43,7 +45,7 @@ export default (props) => {
         size="2rem"
         className={styles.next}
         onClick={() => {
-          setIndex(index + 1);
+          if (index < props.data.url.length - 1) setIndex(index + 1);
           setFirst(false);
         }}
       />
@@ -74,6 +76,7 @@ export default (props) => {
                 delay={first ? 1.4 : 0}
                 duration={1}
                 color="white"
+                key={i}
               >
                 <img src={item} alt="" className={styles.design_img} />
               </BlockRevealAnimation>

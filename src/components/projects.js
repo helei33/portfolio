@@ -33,9 +33,8 @@ export default () => {
       <div className={styles.project_container} id="project-wheel">
         <div style={{ width: `${data.allProjectsJson.edges.length * 300}px` }}>
           {data.allProjectsJson.edges.map(({ node }, i) => (
-            <Fade bottom delay={i * 200} duration={600}>
+            <Fade bottom delay={i * 200} duration={600} key={node.value.name}>
               <div
-                key={node.value.name}
                 className={styles.project_item}
                 onClick={() => {
                   setShow(!show);

@@ -50,9 +50,8 @@ export default () => {
         <div className={styles.design_container} id="design-wheel">
           <div style={{ width: `${data.allDesignJson.edges.length * 400}px` }}>
             {data.allDesignJson.edges.map(({ node }, i) => (
-              <Fade bottom delay={i * 150} duration={450}>
+              <Fade bottom delay={i * 150} duration={450} key={node.value.name}>
                 <div
-                  key={node.value.name}
                   className={styles.design_item}
                   onClick={() => {
                     setShow(true);

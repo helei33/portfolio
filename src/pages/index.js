@@ -4,6 +4,7 @@ import Social from "../components/social";
 import Navagator from "../components/navigator";
 import Introduction from "../components/introduction";
 import { Link } from "gatsby";
+import Arrow from '../components/arrow'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
             }}
           />
         </Link>
+        <Arrow/>
         <Navagator />
         <Introduction />
         <Social />

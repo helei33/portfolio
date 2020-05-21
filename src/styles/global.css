@@ -39,3 +39,10 @@
   top: 96px;
   left: 211px;
 }
+.project-arrow {
+  margin: 0;
+  transform: rotateZ(90deg);
+  position: relative;
+  left: calc(100% - 580px);
+  top: 400px;
+}

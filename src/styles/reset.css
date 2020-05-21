@@ -153,6 +153,7 @@ body {
   width: 100%;
   user-select: text;
   height: 100%;
+  overflow: hidden;
 }
 #___gatsby {
   height: 100%;

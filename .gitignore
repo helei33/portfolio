@@ -10,7 +10,6 @@
 
 # gatsby.js
 /.cache/
-/public/
 /cache
 
 # production
