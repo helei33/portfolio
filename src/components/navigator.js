@@ -17,7 +17,7 @@ export default () => {
                   : {}
               }
             ></div>
-            <div className={styles.page_text}>浏览</div>
+            <div className={styles.page_text}>介绍</div>
           </li>
         </Link>
         <Link to="/projects">

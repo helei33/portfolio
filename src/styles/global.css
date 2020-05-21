@@ -42,7 +42,12 @@
 .project-arrow {
   margin: 0;
   transform: rotateZ(90deg);
-  position: relative;
-  left: calc(100% - 580px);
-  top: 400px;
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+}
+.index-arrow {
+  position: absolute;
+  top: 80px;
+  left: calc(50vw + 105px);
 }

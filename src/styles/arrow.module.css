@@ -1,7 +1,4 @@
 .arrow_container {
-  position: absolute;
-  top: 80px;
-  left: calc(50vw + 105px);
   width: 80px;
   height: 120px;
   display: flex;

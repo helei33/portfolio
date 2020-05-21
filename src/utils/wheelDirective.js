@@ -25,6 +25,11 @@ export class WheelDirective {
       return;
     }
     event.preventDefault();
+    const arrow = document.getElementsByClassName("project-arrow")[0];
+    console.log(arrow);
+    if (arrow) {
+      arrow.setAttribute("style", "display:none");
+    }
     this.el.scrollLeft += event.deltaY
       ? event.deltaY
       : event.detail && event.detail !== 0
