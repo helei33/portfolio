@@ -3,7 +3,7 @@
 
 ### 预览
 
-<img src="https://i.loli.net/2020/05/21/C6TXI2SNdO8jZsf.png">
+<img src="https://i.loli.net/2020/05/21/Yf25jCmnXDNtOAQ.png">
 <img src="https://i.loli.net/2020/05/21/xyPrVL2mGC1WEZ7.png">
 <img src="https://i.loli.net/2020/05/21/LeqwgVTzRXcDbrm.png">
 <img src="https://i.loli.net/2020/05/21/hOATEIFbqSC5JZD.png">
