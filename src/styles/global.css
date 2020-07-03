@@ -1,33 +1,37 @@
-.project-title-container {
-  position: absolute;
+.develop-title-container {
+  /* position: absolute;
   left: 0px;
-  top: 40px;
+  top: 40px; */
   max-height: 500px;
+  width: 400px;
+  float: left;
 }
-.project-title-bg {
+.develop-title-bg {
   position: relative;
   right: 190px;
+  top: 30px;
 }
-.project-title-text {
+.develop-title-text {
   font-size: 80px;
   font-weight: 800;
   line-height: 96px;
   color: rgba(255, 255, 255, 1);
   opacity: 1;
   position: relative;
-  bottom: 270px;
+  bottom: 230px;
   left: 30px;
 }
 .design-title-container {
   position: absolute;
-  left: -200px;
-  bottom: 580px;
+  left: -250px;
+  top: -250px;
   max-height: 500px;
-  transform: rotateZ(280deg) scale(1.1);
 }
 .design-title-bg {
-  position: relative;
+  /* position: relative;
   right: 190px;
+  top: 100px; */
+  transform: rotateZ(280deg) scale(1.1);
 }
 .design-title-text {
   font-size: 80px;
@@ -38,7 +42,7 @@
   position: relative;
   left: 11px;
 }
-.project-arrow {
+.develop-arrow {
   margin: 0;
   transform: rotateZ(90deg);
   position: absolute;

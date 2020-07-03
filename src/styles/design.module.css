@@ -5,7 +5,7 @@
   height: 420px;
 }
 .scroll_parent {
-  width: calc(100% - 200px);
+  width: calc(100vw - 200px);
   height: 320px;
   overflow: hidden;
 }
@@ -20,7 +20,6 @@
 .design_item {
   width: 356px;
   height: 267px;
-  /* background-color: rgba(82, 22, 206, 1); */
   opacity: 1;
   border-radius: 5px;
   margin: 10px 20px;
@@ -31,12 +30,16 @@
 }
 .bg_image {
   height: 100%;
-  width: 100%;
   opacity: 1;
   border-radius: 10px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+}
+.image_container {
+  height: 267px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .illustration {
   width: 100%;
@@ -80,4 +83,13 @@
   z-index: 20;
   position: relative;
   bottom: 100vh;
+}
+.design_subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  text-align: center;
+  text-overflow: ellipsis;
 }

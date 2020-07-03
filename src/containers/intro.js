@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import Arrow from "../components/arrow";
 export default function Home() {
   const [show, setShow] = useState(false);
+
   useEffect(() => {
     setTimeout(() => {
       setShow(true);

@@ -5,7 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import styles from "../styles/designShow.module.css";
 import BlockRevealAnimation from "react-block-reveal-animation";
-
+import Arrow from "../components/arrow";
 export default (props) => {
   if (!props.data) {
     return null;
@@ -19,7 +19,7 @@ export default (props) => {
     >
       <Fade bottom delay={700}>
         <AiOutlineClose
-          color="white"
+          color={props.data.fontColor}
           size="2rem"
           className={styles.close}
           onClick={() => {
@@ -27,9 +27,12 @@ export default (props) => {
           }}
         />
       </Fade>
-
+      <div className={styles.arrow}>
+        <Arrow />
+      </div>
       <FiArrowLeft
-        color={index > 0 ? "white" : "rgba(255,255,255,0.5)"}
+        opacity={index > 0 ? 1 : 0.5}
+        color={props.data.fontColor}
         className={styles.prev}
         size="2rem"
         onClick={() => {
@@ -40,9 +43,8 @@ export default (props) => {
       />
 
       <FiArrowRight
-        color={
-          index < props.data.url.length - 1 ? "white" : "rgba(255,255,255,0.5)"
-        }
+        opacity={index < props.data.url.length - 1 ? 1 : 0.5}
+        color={props.data.fontColor}
         size="2rem"
         className={styles.next}
         onClick={() => {
@@ -58,7 +60,7 @@ export default (props) => {
           duration={0.5}
           color="white"
         >
-          <span>{props.data.name}</span>
+          <span color={props.data.fontColor}>{props.data.name}</span>
         </BlockRevealAnimation>
       </div>
 
@@ -66,7 +68,9 @@ export default (props) => {
         <div className={styles.line}></div>
       </Fade>
       <Fade bottom delay={500}>
-        <div className={styles.design_desc}>{props.data.description}</div>
+        <div className={styles.design_desc} color={props.data.fontColor}>
+          {props.data.description}
+        </div>
       </Fade>
       <div className={styles.img_container}>
         {props.data.url.map((item, i) => {

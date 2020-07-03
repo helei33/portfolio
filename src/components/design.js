@@ -26,7 +26,9 @@ export default () => {
     }
   `);
   const [show, setShow] = useState(false);
-  const [designData, setDesignData] = useState();
+  const [designData, setDesignData] = useState(
+    data.allDesignJson.edges[0].node.value
+  );
   useEffect(() => {
     const Ele = document.getElementById("design-wheel");
     new WheelDirective(Ele);
@@ -42,7 +44,7 @@ export default () => {
         <div
           className={styles.design_show_mask}
           style={{
-            backgroundColor: data.allDesignJson.edges[0].node.value.color[0],
+            backgroundColor: designData.color[0],
           }}
         ></div>
       </Slide>
@@ -57,7 +59,7 @@ export default () => {
                 <Fade
                   bottom
                   delay={i * 150}
-                  duration={450}
+                  duration={500}
                   key={node.value.name}
                 >
                   <div
@@ -67,11 +69,17 @@ export default () => {
                       setDesignData(node.value);
                     }}
                   >
-                    <img
-                      src={node.value.image}
-                      alt=""
-                      className={styles.bg_image}
-                    />
+                    <div className={styles.image_container}>
+                      <img
+                        src={node.value.image}
+                        alt=""
+                        className={styles.bg_image}
+                      />
+                    </div>
+
+                    <div className={styles.design_subtitle}>
+                      {node.value.name}
+                    </div>
                   </div>
                 </Fade>
               ))}

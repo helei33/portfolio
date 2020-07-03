@@ -16,7 +16,7 @@ export default () => {
           <g
             transform="translate(48 48) rotate(180)"
             fill="none"
-            stroke="#757575"
+            stroke="rgba(255,255,255,0.4)"
             strokeWidth="1.5"
           >
             <circle cx="24" cy="24" r="24" stroke="none" />

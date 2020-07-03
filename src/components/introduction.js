@@ -49,6 +49,7 @@ export default () => {
                 "Typescript",
                 "Nodejs",
                 "React",
+                "Vue",
                 "Adobe XD",
                 "Photoshop",
                 "Illustrator",

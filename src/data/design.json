@@ -4,59 +4,29 @@
       "name": "概念海报系列",
       "description": "为一些互联网公司设计的概念海报",
       "url": [
-        "https://i.loli.net/2020/05/20/O4gitNc8jZJIQod.png",
-        "https://i.loli.net/2020/05/20/YiKtMHVR8FUdkEZ.png",
-        "https://i.loli.net/2020/05/21/fQjpoC8gcrw1bHW.png",
-        "https://i.loli.net/2020/05/21/HqS1NYncuUjIlgV.png",
-        "https://i.loli.net/2020/05/21/akqWye9VUEOFrb6.png"
+        "https://i.loli.net/2020/07/03/3wLOoaHFz4j8P1l.png",
+        "https://i.loli.net/2020/07/03/9otB1Wk4eEfawAj.png",
+        "https://i.loli.net/2020/07/03/jf4t1iWaRxl3OdF.png",
+        "https://i.loli.net/2020/07/03/yMdOe4DLknKsUc5.png",
+        "https://i.loli.net/2020/07/03/5JgwQYKxnSuLdW4.png"
       ],
-      "color": ["#D74A4A", "#E9A59D", "#4E4FD2", "#070707", "#FF8080"],
-      "image": "https://i.loli.net/2020/05/20/2HXaGlpcBgioh5d.png"
+      "color": ["#D74A4A", "#E9A59D", "#070707", "#4E4FD2", "#FF8080"],
+      "image": "https://i.loli.net/2020/07/03/bFgvHXE1TseAd8K.png"
     }
   },
   {
     "value": {
-      "name": "Concept Poster2",
-      "description": "为一些互联网公司设计的概念海报",
+      "name": "Soundify",
+      "description": "个人实验项目",
       "url": [
-        "https://i.loli.net/2020/05/20/O4gitNc8jZJIQod.png",
-        "https://i.loli.net/2020/05/20/YiKtMHVR8FUdkEZ.png",
-        "https://i.loli.net/2020/05/21/fQjpoC8gcrw1bHW.png",
-        "https://i.loli.net/2020/05/21/HqS1NYncuUjIlgV.png",
-        "https://i.loli.net/2020/05/21/akqWye9VUEOFrb6.png"
+        "https://i.loli.net/2020/07/03/zvXqDiEoGYNnrZB.png",
+        "https://i.loli.net/2020/07/03/gJjxqZs5y31RlHQ.png",
+        "https://i.loli.net/2020/07/03/6t2uHI4fPJVmS1q.png",
+        "https://i.loli.net/2020/07/03/wF3s17gz4oPlkVa.png",
+        "https://i.loli.net/2020/07/03/FKhlNsBa4toUfjI.png"
       ],
-      "color": ["#D74A4A", "#E9A59D", "#4E4FD2", "#070707", "#FF8080"],
-      "image": "https://i.loli.net/2020/05/20/2HXaGlpcBgioh5d.png"
-    }
-  },
-  {
-    "value": {
-      "name": "Concept Poster3",
-      "description": "为一些互联网公司设计的概念海报",
-      "url": [
-        "https://i.loli.net/2020/05/20/O4gitNc8jZJIQod.png",
-        "https://i.loli.net/2020/05/20/YiKtMHVR8FUdkEZ.png",
-        "https://i.loli.net/2020/05/21/fQjpoC8gcrw1bHW.png",
-        "https://i.loli.net/2020/05/21/HqS1NYncuUjIlgV.png",
-        "https://i.loli.net/2020/05/21/akqWye9VUEOFrb6.png"
-      ],
-      "color": ["#D74A4A", "#E9A59D", "#4E4FD2", "#070707", "#FF8080"],
-      "image": "https://i.loli.net/2020/05/20/2HXaGlpcBgioh5d.png"
-    }
-  },
-  {
-    "value": {
-      "name": "Concept Poster4",
-      "description": "为一些互联网公司设计的概念海报",
-      "url": [
-        "https://i.loli.net/2020/05/20/O4gitNc8jZJIQod.png",
-        "https://i.loli.net/2020/05/20/YiKtMHVR8FUdkEZ.png",
-        "https://i.loli.net/2020/05/21/fQjpoC8gcrw1bHW.png",
-        "https://i.loli.net/2020/05/21/HqS1NYncuUjIlgV.png",
-        "https://i.loli.net/2020/05/21/akqWye9VUEOFrb6.png"
-      ],
-      "color": ["#D74A4A", "#E9A59D", "#4E4FD2", "#070707", "#FF8080"],
-      "image": "https://i.loli.net/2020/05/20/2HXaGlpcBgioh5d.png"
+      "color": ["#3D7EE8", "#3D7EE8", "#3D7EE8", "#3D7EE8", "#3D7EE8"],
+      "image": "https://i.loli.net/2020/07/03/gUevsVN74GPRQmK.png"
     }
   }
 ]
