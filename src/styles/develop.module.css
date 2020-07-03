@@ -1,6 +1,6 @@
 .scroll_parent {
   position: absolute;
-  top: 85px;
+  top: calc(50% - 202px);
   left: 440px;
   width: calc(100% - 440px);
   height: 450px;

@@ -35,9 +35,8 @@
   line-height: 96px;
   color: rgba(255, 255, 255, 1);
   opacity: 1;
-  position: absolute;
-  top: 96px;
-  left: 211px;
+  position: relative;
+  left: 11px;
 }
 .project-arrow {
   margin: 0;

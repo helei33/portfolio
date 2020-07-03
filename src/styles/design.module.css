@@ -1,7 +1,10 @@
-.scroll_parent {
+.desgin_container {
   position: absolute;
-  top: 200px;
+  top: calc(50% - 210px);
   left: 200px;
+  height: 420px;
+}
+.scroll_parent {
   width: calc(100% - 200px);
   height: 320px;
   overflow: hidden;

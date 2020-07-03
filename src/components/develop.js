@@ -1,6 +1,7 @@
+//展示项目
 import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import styles from "../styles/projects.module.css";
+import styles from "../styles/develop.module.css";
 import { WheelDirective } from "../utils/wheelDirective";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";

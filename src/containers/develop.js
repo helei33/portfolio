@@ -1,8 +1,7 @@
 import React from "react";
-import Navigator from "../components/navigator";
-import Social from "../components/social";
-import Projects from "../components/projects";
+import Develop from "../components/develop";
 import Arrow from "../components/arrow";
+
 export default () => {
   return (
     <div>
@@ -14,13 +13,10 @@ export default () => {
         />
         <div className="project-title-text">PROJECT</div>
       </div>
-      <Projects />
+      <Develop />
       <div className="project-arrow">
         <Arrow />
       </div>
-
-      <Navigator />
-      <Social />
     </div>
   );
 };

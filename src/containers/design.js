@@ -1,6 +1,4 @@
 import React from "react";
-import Navigator from "../components/navigator";
-import Social from "../components/social";
 import Design from "../components/design";
 export default () => {
   return (
@@ -13,8 +11,6 @@ export default () => {
         />
       </div>
       <Design />
-      <Navigator />
-      <Social />
     </div>
   );
 };

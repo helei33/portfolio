@@ -160,4 +160,6 @@ body {
   background-color: black;
   background-image: url("/bg-image.svg");
   color: white;
+  -moz-background-size: 100%;
+  background-size: cover;
 }
