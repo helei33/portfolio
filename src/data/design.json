@@ -59,17 +59,14 @@
       ],
       "image": "https://i.loli.net/2020/07/04/T5eBXzI2StNPpZ8.png"
     }
-  }{
+  },
+  {
     "value": {
       "name": "Pop Art",
       "description": "个人实验项目",
-      "url": [
-        "https://i.loli.net/2020/07/04/y9tTfIcF3usWaJ7.png"
-      ],
-      "color": [
-        "#F7CABC"
-      ],
-      "image": "https://i.loli.net/2020/07/04/XHRDrsdyTxbB2Kv.png"
+      "url": ["https://i.loli.net/2020/07/04/y9tTfIcF3usWaJ7.png"],
+      "color": ["#F7CABC"],
+      "image": "https://i.loli.net/2020/07/04/ISscbzDipBAyC9h.png"
     }
   }
 ]

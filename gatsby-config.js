@@ -39,7 +39,6 @@ module.exports = {
         workboxConfig: {
           globPatterns: ["**/*"],
         },
-        precachePages: [`/develop/`, `/design/`],
       },
     },
     {
