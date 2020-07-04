@@ -9,7 +9,7 @@ export default () => {
       <div>
         <BlockRevealAnimation
           className="myCustomClassName"
-          delay={0.2}
+          delay={0.4}
           duration={0.8}
           color="#5216CE"
         >
@@ -20,7 +20,7 @@ export default () => {
       <div>
         <BlockRevealAnimation
           className="myCustomClassName"
-          delay={0.8}
+          delay={1}
           duration={1}
           color="#5216CE"
         >
@@ -32,7 +32,7 @@ export default () => {
       <div>
         <BlockRevealAnimation
           className="myCustomClassName"
-          delay={1.4}
+          delay={1.6}
           duration={0.6}
           color="white"
         >
@@ -43,7 +43,7 @@ export default () => {
           </span>
           &nbsp;
           <span style={{ color: "#5216CE" }}>
-            <TextLoop interval={1000} delay={1800}>
+            <TextLoop interval={800} delay={2000}>
               {[
                 "Javascript",
                 "Typescript",

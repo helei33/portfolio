@@ -4,7 +4,7 @@ export function preloadImage(imglist) {
   function preload() {
     for (let i = 0; i < length; i++) {
       images[i] = new Image();
-      images[i].src = `${imglist[i].url}`;
+      images[i].src = `${imglist[i]}`;
     }
   }
   preload();

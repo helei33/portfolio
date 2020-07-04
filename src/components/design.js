@@ -8,6 +8,7 @@ import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
 export default () => {
+  const [load, setLoad] = useState(false);
   const data = useStaticQuery(graphql`
     query GetAllDesign {
       allDesignJson {
@@ -29,9 +30,10 @@ export default () => {
   const [designData, setDesignData] = useState(
     data.allDesignJson.edges[0].node.value
   );
+
   useEffect(() => {
-    const Ele = document.getElementById("design-wheel");
-    new WheelDirective(Ele);
+    const ScrollEle = document.getElementById("design-wheel");
+    new WheelDirective(ScrollEle);
   }, []);
   return (
     <div style={{ height: "100vh", overflow: "hidden" }}>
@@ -48,17 +50,20 @@ export default () => {
           }}
         ></div>
       </Slide>
+
       <div className={styles.desgin_container}>
         <div className="design-title-text">DESIGN</div>
         <div className={styles.scroll_parent}>
           <div className={styles.design_container} id="design-wheel">
             <div
-              style={{ width: `${data.allDesignJson.edges.length * 400}px` }}
+              style={{
+                width: `${data.allDesignJson.edges.length * 400}px`,
+              }}
             >
               {data.allDesignJson.edges.map(({ node }, i) => (
                 <Fade
                   bottom
-                  delay={i * 150}
+                  delay={i * 150 + 800}
                   duration={500}
                   key={node.value.name}
                 >

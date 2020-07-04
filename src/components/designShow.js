@@ -1,5 +1,5 @@
 //展示设计作品
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
@@ -10,6 +10,7 @@ export default (props) => {
   if (!props.data) {
     return null;
   }
+  useEffect(() => {}, []);
   const [index, setIndex] = useState(0);
   const [first, setFirst] = useState(true);
   return (
@@ -52,7 +53,6 @@ export default (props) => {
           setFirst(false);
         }}
       />
-
       <div className={styles.design_name}>
         <BlockRevealAnimation
           className="myCustomClassName"
@@ -79,7 +79,7 @@ export default (props) => {
               <BlockRevealAnimation
                 className="myCustomClassName"
                 delay={first ? 1.4 : 0}
-                duration={1}
+                duration={1.4}
                 color="white"
                 key={i}
               >

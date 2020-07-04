@@ -34,7 +34,12 @@ export default () => {
       <div className={styles.project_container} id="project-wheel">
         <div style={{ width: `${data.allProjectsJson.edges.length * 300}px` }}>
           {data.allProjectsJson.edges.map(({ node }, i) => (
-            <Fade bottom delay={i * 200} duration={600} key={node.value.name}>
+            <Fade
+              bottom
+              delay={i * 200 + 600}
+              duration={600}
+              key={node.value.name}
+            >
               <div
                 className={styles.project_item}
                 onClick={() => {
@@ -49,6 +54,7 @@ export default () => {
                   setShow(false);
                   setId(-1);
                 }}
+                id="scroll-item"
               >
                 <div className={styles.project_info}>
                   <Slide bottom duration={500} collapse when={show && id === i}>

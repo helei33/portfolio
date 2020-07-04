@@ -4,7 +4,7 @@ export class WheelDirective {
     this.handleWheelEvent();
   }
 
-  handleWheelEvent() {
+  handleWheelEvent = () => {
     const event = window.addEventListener ? "addEventListener" : "attachEvent";
     let wheel = "";
 
@@ -18,22 +18,23 @@ export class WheelDirective {
       wheel = "DOMMouseScroll";
     }
     this.el[event](wheel, this.scroll);
-  }
+  };
 
   scroll = (event) => {
     if (this.el.clientWidth >= this.el.scrollWidth) {
       return;
     }
-    event.preventDefault();
-    const arrow = document.getElementsByClassName("project-arrow")[0];
-    console.log(arrow);
-    if (arrow) {
-      arrow.setAttribute("style", "display:none");
-    }
-    this.el.scrollLeft += event.deltaY
+    let scrollWidth = event.deltaY
       ? event.deltaY
       : event.detail && event.detail !== 0
       ? event.detail
       : -event.wheelDelta;
+    event.preventDefault();
+    if (scrollWidth > 0) {
+      // console.log(this.el.scrollLeft);
+      this.el.scrollLeft += 100;
+    } else {
+      this.el.scrollLeft -= 100;
+    }
   };
 }

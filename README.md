@@ -5,7 +5,6 @@
 
 <img src="https://i.loli.net/2020/05/21/Yf25jCmnXDNtOAQ.png">
 <img src="https://i.loli.net/2020/05/21/xyPrVL2mGC1WEZ7.png">
-<img src="https://i.loli.net/2020/05/21/LeqwgVTzRXcDbrm.png">
 <img src="https://i.loli.net/2020/05/21/hOATEIFbqSC5JZD.png">
 
 ### 网站介绍
