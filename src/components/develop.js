@@ -36,7 +36,7 @@ export default (props) => {
           {data.allProjectsJson.edges.map(({ node }, i) => (
             <Fade
               bottom
-              delay={i * 200 + 600}
+              delay={i * 200 }
               duration={600}
               key={node.value.name}
               when={props.page === 1}

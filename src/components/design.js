@@ -70,7 +70,7 @@ export default (props) => {
               {data.allDesignJson.edges.map(({ node }, i) => (
                 <Fade
                   bottom
-                  delay={i * 150 + 800}
+                  delay={i * 150}
                   duration={500}
                   key={node.value.name}
                   when={props.page === 2}
