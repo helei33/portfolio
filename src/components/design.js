@@ -7,7 +7,7 @@ import DesignShow from "./designShow";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
-export default () => {
+export default (props) => {
   const data = useStaticQuery(graphql`
     query GetAllDesign {
       allDesignJson {
@@ -34,8 +34,16 @@ export default () => {
     const ScrollEle = document.getElementById("design-wheel");
     new WheelDirective(ScrollEle);
   }, []);
+  console.log(props.page, "page");
   return (
-    <div style={{ height: "100vh", overflow: "hidden" }}>
+    <div
+      style={{
+        height: "100vh",
+        overflow: "hidden",
+        width: "100vw",
+        position: "absolute",
+      }}
+    >
       {show ? (
         <DesignShow data={designData} setShow={setShow} />
       ) : (
@@ -65,6 +73,7 @@ export default () => {
                   delay={i * 150 + 800}
                   duration={500}
                   key={node.value.name}
+                  when={props.page === 2}
                 >
                   <div
                     className={styles.design_item}

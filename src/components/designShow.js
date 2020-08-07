@@ -13,6 +13,7 @@ export default (props) => {
   useEffect(() => {}, []);
   const [index, setIndex] = useState(0);
   const [first, setFirst] = useState(true);
+  console.log(index, "index");
   return (
     <div
       className={styles.design_show_container}
@@ -72,10 +73,10 @@ export default (props) => {
           {props.data.description}
         </div>
       </Fade>
-      <div className={styles.img_container}>
-        {props.data.url.map((item, i) => {
-          return (
-            i === index && (
+      <div className={styles.img_container_parent}>
+        <div className={styles.img_container}>
+          {props.data.url.map((item, i) => {
+            return (
               <BlockRevealAnimation
                 className="myCustomClassName"
                 delay={first ? 1.4 : 0}
@@ -83,11 +84,16 @@ export default (props) => {
                 color="white"
                 key={i}
               >
-                <img src={item} alt="" className={styles.design_img} />
+                <img
+                  src={item}
+                  alt=""
+                  className={styles.design_img}
+                  style={index === i ? {} : { display: "none" }}
+                />
               </BlockRevealAnimation>
-            )
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

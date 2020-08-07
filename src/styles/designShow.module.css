@@ -1,20 +1,28 @@
 .design_show_container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 25;
   position: relative;
 }
+.img_container_parent {
+  height: 100vh;
+  width: 866px;
+  overflow: hidden;
+}
 .img_container {
   width: 866px;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 17px;
+  box-sizing: content-box;
   display: flex;
   align-items: center;
   position: absolute;
   left: calc(50% - 433px);
   top: 0px;
+  overflow-x: scroll;
 }
 .design_img {
-  width: 100%;
+  width: 866px;
 }
 .close {
   position: absolute;

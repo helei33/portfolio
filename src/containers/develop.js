@@ -2,9 +2,12 @@ import React from "react";
 import Develop from "../components/develop";
 import Arrow from "../components/arrow";
 import Fade from "react-reveal/Fade";
-export default () => {
+export default (props) => {
   return (
-    <div className="develop-container">
+    <div
+      className="develop-container"
+      style={props.page === 1 ? {} : { transform: "translateX(-100vw)" }}
+    >
       <div className="develop-title-container">
         <Fade left duration={600}>
           <img
@@ -16,7 +19,7 @@ export default () => {
         <div className="develop-title-text">DEVELOP</div>
       </div>
 
-      <Develop />
+      <Develop page={props.page} />
       <div className="develop-arrow">
         <Arrow />
       </div>

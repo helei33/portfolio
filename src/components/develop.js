@@ -5,7 +5,7 @@ import styles from "../styles/develop.module.css";
 import { WheelDirective } from "../utils/wheelDirective";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
-export default () => {
+export default (props) => {
   const [show, setShow] = useState(false);
   const [id, setId] = useState(-1);
   const data = useStaticQuery(graphql`
@@ -39,6 +39,7 @@ export default () => {
               delay={i * 200 + 600}
               duration={600}
               key={node.value.name}
+              when={props.page === 1}
             >
               <div
                 className={styles.project_item}
@@ -46,10 +47,6 @@ export default () => {
                   setShow(!show);
                   setId(i);
                 }}
-                // onMouseEnter={() => {
-                //   setShow(true);
-                //   setId(i);
-                // }}
                 onMouseLeave={() => {
                   setShow(false);
                   setId(-1);

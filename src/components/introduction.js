@@ -9,7 +9,7 @@ export default () => {
       <div>
         <BlockRevealAnimation
           className="myCustomClassName"
-          delay={0.4}
+          delay={0.7}
           duration={0.8}
           color="#5216CE"
         >
@@ -20,7 +20,7 @@ export default () => {
       <div>
         <BlockRevealAnimation
           className="myCustomClassName"
-          delay={1}
+          delay={1.3}
           duration={1}
           color="#5216CE"
         >
@@ -32,7 +32,7 @@ export default () => {
       <div>
         <BlockRevealAnimation
           className="myCustomClassName"
-          delay={1.6}
+          delay={2.0}
           duration={0.6}
           color="white"
         >

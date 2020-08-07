@@ -9,7 +9,9 @@ export default function Home() {
   const [page, setPage] = useState(0);
   return (
     <Layout>
-      {page === 0 ? <Intro /> : page === 1 ? <Develop /> : <Design />}
+      <Intro page={page} />
+      <Develop page={page} />
+      <Design page={page} />
       <Navagator setPage={setPage} page={page} />
       <Social />
     </Layout>
