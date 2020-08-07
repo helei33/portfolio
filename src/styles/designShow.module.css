@@ -21,6 +21,10 @@
   top: 0px;
   overflow-x: scroll;
 }
+.img_box {
+  width: 866px;
+  /* height: 100vh; */
+}
 .design_img {
   width: 866px;
 }

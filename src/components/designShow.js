@@ -1,6 +1,7 @@
 //展示设计作品
 import React, { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import styles from "../styles/designShow.module.css";
@@ -77,11 +78,11 @@ export default (props) => {
         <div className={styles.img_container}>
           {props.data.url.map((item, i) => {
             return (
-              <BlockRevealAnimation
-                className="myCustomClassName"
-                delay={first ? 1.4 : 0}
-                duration={1.4}
-                color="white"
+              <Slide
+                right
+                opposite
+                delay={first ? 1400 : 0}
+                duration={800}
                 key={i}
               >
                 <img
@@ -90,7 +91,7 @@ export default (props) => {
                   className={styles.design_img}
                   style={index === i ? {} : { display: "none" }}
                 />
-              </BlockRevealAnimation>
+              </Slide>
             );
           })}
         </div>
