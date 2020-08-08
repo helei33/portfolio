@@ -1,7 +1,6 @@
 .develop-title-container {
-  /* position: absolute;
-  left: 0px;
-  top: 40px; */
+  position: relative;
+  top: calc(50vh - 280px);
   max-height: 500px;
   width: 400px;
   float: left;
