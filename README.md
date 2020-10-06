@@ -4,8 +4,6 @@
 ### 预览
 
 <img src="https://i.loli.net/2020/07/10/AluVFksdj6UNr4y.png">
-<img src="https://i.loli.net/2020/07/10/9BTUc2Wvq1Hjfat.png">
-<img src="https://i.loli.net/2020/05/21/hOATEIFbqSC5JZD.png">
 
 ### 网站介绍
 
