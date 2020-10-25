@@ -3,6 +3,9 @@ import Develop from "../components/develop";
 import Arrow from "../components/arrow";
 
 export default (props) => {
+  if (!document.location.hash) {
+    return <div></div>;
+  }
   return (
     <div className="develop-container">
       <div className="develop-title-container">
