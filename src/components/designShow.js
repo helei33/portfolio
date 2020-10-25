@@ -5,8 +5,8 @@ import Slide from "react-reveal/Slide";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import styles from "../styles/designShow.module.css";
-import BlockRevealAnimation from "react-block-reveal-animation";
 import Arrow from "../components/arrow";
+import BlockRevealAnimation from "react-block-reveal-animation";
 export default (props) => {
   if (!props.data) {
     return null;
@@ -15,9 +15,6 @@ export default (props) => {
   const [index, setIndex] = useState(0);
   const [first, setFirst] = useState(true);
   console.log(index, "index");
-  useEffect(() => {
-    return () => {};
-  }, []);
   return (
     <div
       className={styles.design_show_container}
@@ -33,9 +30,6 @@ export default (props) => {
           }}
         />
       </Fade>
-      <div className={styles.arrow}>
-        <Arrow />
-      </div>
       <FiArrowLeft
         opacity={index > 0 ? 1 : 0.5}
         color={props.data.fontColor}
@@ -47,7 +41,9 @@ export default (props) => {
           }
         }}
       />
-
+      <div className={styles.arrow}>
+        <Arrow />
+      </div>
       <FiArrowRight
         opacity={index < props.data.url.length - 1 ? 1 : 0.5}
         color={props.data.fontColor}
@@ -69,15 +65,25 @@ export default (props) => {
         </BlockRevealAnimation>
       </div>
 
-      <Fade bottom delay={500}>
+      <BlockRevealAnimation
+        className="myCustomClassName"
+        delay={0.5}
+        duration={0.7}
+        color="white"
+      >
         <div className={styles.line}></div>
-      </Fade>
-      <Fade bottom delay={500}>
-        <div className={styles.design_desc} color={props.data.fontColor}>
+      </BlockRevealAnimation>
+      <div className={styles.design_desc} color={props.data.fontColor}>
+        <BlockRevealAnimation
+          className="myCustomClassName"
+          delay={0.6}
+          duration={1}
+          color={props.data.color[index]}
+        >
           {props.data.description}
-        </div>
-      </Fade>
-      <div className={styles.img_container_parent} ref="holder">
+        </BlockRevealAnimation>
+      </div>
+      <div className={styles.img_container_parent}>
         <div className={styles.img_container}>
           {props.data.url.map((item, i) => {
             return (

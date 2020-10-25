@@ -1,7 +1,5 @@
 .intro_container {
-  position: absolute;
-  top: calc(50% - 120px);
-  left: calc(50% - 200px);
+  margin-left: calc(50vw - 200px);
   font-size: 42px;
   font-weight: bold;
   line-height: 77px;

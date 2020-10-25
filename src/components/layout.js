@@ -4,5 +4,5 @@ import "../styles/reset.css";
 import "../styles/global.css";
 import "react-tippy/dist/tippy.css";
 export default ({ children }) => {
-  return <div style={{}}>{children}</div>;
+  return <div style={{ height: "100vh" }}>{children}</div>;
 };

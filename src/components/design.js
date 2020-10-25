@@ -2,11 +2,14 @@
 import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import styles from "../styles/design.module.css";
-import { WheelDirective } from "../utils/wheelDirective";
 import DesignShow from "./designShow";
 import Slide from "react-reveal/Slide";
-import Fade from "react-reveal/Fade";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Virtual } from "swiper";
+import "swiper/swiper.scss";
 
+import { useSpring, animated as a } from "react-spring";
+SwiperCore.use([Virtual]);
 export default (props) => {
   const data = useStaticQuery(graphql`
     query GetAllDesign {
@@ -26,24 +29,26 @@ export default (props) => {
     }
   `);
   const [show, setShow] = useState(false);
+  const [id, setId] = useState(-1);
+
   const [designData, setDesignData] = useState(
     data.allDesignJson.edges[0].node.value
   );
+  const [card, setCard] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 5, tension: 350, friction: 40 },
+  }));
 
-  useEffect(() => {
-    const ScrollEle = document.getElementById("design-wheel");
-    new WheelDirective(ScrollEle);
-  }, []);
-  console.log(props.page, "page");
+  const calc = (x, y) => [
+    -(y - window.innerHeight / 2) / 20,
+    (x - window.innerWidth / 2) / 20,
+    1,
+  ];
+  const trans = (x, y, s) =>
+    `perspective(1200px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+
   return (
-    <div
-      style={{
-        height: "100vh",
-        overflow: "hidden",
-        width: "100vw",
-        position: "absolute",
-      }}
-    >
+    <div style={{ overflow: "hidden" }}>
       {show ? (
         <DesignShow data={designData} setShow={setShow} />
       ) : (
@@ -60,44 +65,45 @@ export default (props) => {
 
       <div className={styles.desgin_container}>
         <div className="design-title-text">DESIGN</div>
-        <div className={styles.scroll_parent}>
-          <div className={styles.design_container} id="design-wheel">
-            <div
-              style={{
-                width: `${data.allDesignJson.edges.length * 400}px`,
-              }}
-            >
-              {data.allDesignJson.edges.map(({ node }, i) => (
-                <Fade
-                  bottom
-                  delay={i * 150}
-                  duration={500}
-                  key={node.value.name}
-                  when={props.page === 2}
+        <div>
+          <Swiper spaceBetween={40} virtual slidesPerView={2.8}>
+            {data.allDesignJson.edges.map(({ node }, i) => (
+              <SwiperSlide key={i} virtualIndex={i}>
+                <div
+                  className={styles.design_item}
+                  onClick={() => {
+                    setShow(true);
+                    setDesignData(node.value);
+                  }}
                 >
-                  <div
-                    className={styles.design_item}
-                    onClick={() => {
-                      setShow(true);
-                      setDesignData(node.value);
+                  <a.div
+                    className={styles.image_container}
+                    onMouseMove={({ clientX: x, clientY: y }) => {
+                      setCard({ xys: calc(x, y) });
+                      setId(i);
                     }}
+                    onMouseLeave={() => {
+                      setCard({ xys: [0, 0, 1] });
+                      setId(-1);
+                    }}
+                    style={
+                      id === i ? { transform: card.xys.interpolate(trans) } : {}
+                    }
                   >
-                    <div className={styles.image_container}>
-                      <img
-                        src={node.value.image}
-                        alt=""
-                        className={styles.bg_image}
-                      />
-                    </div>
+                    <img
+                      src={node.value.image}
+                      alt=""
+                      className={styles.bg_image}
+                    />
+                  </a.div>
 
-                    <div className={styles.design_subtitle}>
-                      {node.value.name}
-                    </div>
+                  <div className={styles.design_subtitle}>
+                    {node.value.name}
                   </div>
-                </Fade>
-              ))}
-            </div>
-          </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@
   height: 100vh;
   z-index: 25;
   position: relative;
+  overflow: hidden;
 }
 .img_container_parent {
   height: 100vh;
@@ -18,7 +19,7 @@
   align-items: center;
   position: absolute;
   left: calc(50% - 433px);
-  top: 0px;
+  top: 10px;
   overflow-x: scroll;
 }
 .img_box {
@@ -27,6 +28,7 @@
 }
 .design_img {
   width: 866px;
+  float: left;
 }
 .close {
   position: absolute;
@@ -73,7 +75,7 @@
   opacity: 1;
   position: absolute;
   left: 10px;
-  top: 235px;
+  top: 220px;
 }
 .arrow {
   margin: 0;

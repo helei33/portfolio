@@ -7,7 +7,7 @@
   overflow: hidden;
   float: right;
   position: relative;
-  top: calc(50vh - 205px);
+  top: calc(50vh - 215px);
 }
 .project_container {
   width: 100%;
@@ -23,7 +23,7 @@
   /* background-color: rgba(82, 22, 206, 1); */
   opacity: 1;
   border-radius: 10px;
-  margin: 10px 25px;
+  margin: 20px 25px;
   float: left;
   position: relative;
   cursor: pointer;

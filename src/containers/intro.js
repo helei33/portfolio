@@ -1,23 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Introduction from "../components/introduction";
 import { Link } from "gatsby";
-import Arrow from "../components/arrow";
-export default function Home(props) {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShow(true);
-    }, 1000);
-  }, []);
+export default function Home() {
   return (
-    <div
-      style={
-        props.page === 0
-          ? { color: `purple` }
-          : { transform: "translateX(-100vw)", color: `purple` }
-      }
-    >
+    <div style={{ color: `purple` }}>
       <Link to="/">
         <img
           src="/logo.png"
@@ -30,11 +16,6 @@ export default function Home(props) {
           }}
         />
       </Link>
-      {show ? (
-        <div className="index-arrow">
-          <Arrow />
-        </div>
-      ) : null}
 
       <Introduction />
     </div>

@@ -1,9 +1,11 @@
 .develop-title-container {
-  position: relative;
-  top: calc(50vh - 280px);
-  max-height: 500px;
+  /* max-height: 500px; */
   width: 400px;
   float: left;
+  overflow: hidden;
+  margin-right: 20px;
+  position: relative;
+  bottom: 20px;
 }
 .develop-title-bg {
   position: relative;
@@ -21,15 +23,18 @@
   left: 30px;
 }
 .design-title-container {
+  overflow: hidden;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   position: absolute;
-  left: -250px;
-  top: -250px;
-  max-height: 500px;
 }
 .design-title-bg {
-  /* position: relative;
-  right: 190px;
-  top: 100px; */
+  position: relative;
+  right: 30px;
+  bottom: 50px;
   transform: rotateZ(280deg) scale(1.1);
 }
 .design-title-text {
@@ -41,15 +46,21 @@
   position: relative;
   left: 11px;
 }
-.develop-arrow {
-  margin: 0;
-  transform: rotateZ(90deg);
-  position: absolute;
-  bottom: -20px;
-  right: 40px;
+.swiper-scrollbar-drag {
+  background: rgba(82, 22, 206, 1) !important;
+}
+#fp-nav {
+  display: none;
 }
 .index-arrow {
   position: absolute;
   top: 80px;
   left: calc(50vw + 105px);
+}
+.develop-arrow {
+  margin: 0;
+  transform: rotateZ(90deg);
+  position: absolute;
+  bottom: -80px;
+  right: 40px;
 }

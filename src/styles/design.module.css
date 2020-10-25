@@ -2,7 +2,8 @@
   position: absolute;
   top: calc(50% - 210px);
   left: 200px;
-  height: 420px;
+  height: 440px;
+  width: calc(100% - 200px);
 }
 .scroll_parent {
   width: calc(100vw - 200px);
@@ -11,7 +12,6 @@
 }
 .design_container {
   width: 100%;
-  height: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
   padding-bottom: 17px; /* Increase/decrease this value for cross-browser compatibility */
@@ -22,7 +22,7 @@
   height: 267px;
   opacity: 1;
   border-radius: 5px;
-  margin: 10px 20px;
+  margin: 20px 20px 30px;
   float: left;
   position: relative;
   cursor: pointer;

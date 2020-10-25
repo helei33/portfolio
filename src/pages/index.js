@@ -1,19 +1,44 @@
 import React, { useState } from "react";
 import Layout from "../components/layout";
 import Social from "../components/social";
-import Navagator from "../components/navigator";
 import Intro from "../containers/intro";
 import Develop from "../containers/develop";
 import Design from "../containers/design";
+import Navigator from "../components/navigator";
+import SwiperCore, { Mousewheel } from "swiper";
+import "swiper/swiper.scss";
+import ReactFullpage from "@fullpage/react-fullpage";
+SwiperCore.use([Mousewheel]);
 export default function Home() {
   const [page, setPage] = useState(0);
   return (
     <Layout>
-      <Intro page={page} />
-      <Develop page={page} />
-      <Design page={page} />
-      <Navagator setPage={setPage} page={page} />
-      <Social />
+      <ReactFullpage
+        scrollOverflow={true}
+        anchors={["intro", "develop", "design"]}
+        navigation
+        render={({ state, fullpageApi }) => {
+          return (
+            <div id="fullpage-wrapper">
+              <div className="section">
+                <Intro />
+                <Social />
+                {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
+              </div>
+              <div className="section">
+                <Develop />
+                <Social />
+                {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
+              </div>
+              <div className="section">
+                <Design />
+                <Social />
+                {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
+              </div>
+            </div>
+          );
+        }}
+      />
     </Layout>
   );
 }
