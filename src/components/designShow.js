@@ -15,6 +15,9 @@ export default (props) => {
   const [index, setIndex] = useState(0);
   const [first, setFirst] = useState(true);
   console.log(index, "index");
+  useEffect(() => {
+    return () => {};
+  }, []);
   return (
     <div
       className={styles.design_show_container}
@@ -74,7 +77,7 @@ export default (props) => {
           {props.data.description}
         </div>
       </Fade>
-      <div className={styles.img_container_parent}>
+      <div className={styles.img_container_parent} ref="holder">
         <div className={styles.img_container}>
           {props.data.url.map((item, i) => {
             return (

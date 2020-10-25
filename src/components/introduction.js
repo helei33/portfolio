@@ -50,6 +50,7 @@ export default () => {
                 "Nodejs",
                 "React",
                 "Vue",
+                "React Native",
                 "Adobe XD",
                 "Photoshop",
                 "Illustrator",

@@ -896,6 +896,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.3.1":
+  version "7.12.1"
+  resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.12.1.tgz?cache=0&sync_timestamp=1602805514181&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
+  integrity sha1-tBFqa2cR0BCy2tO3tuQ78bmVR0A=
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.9.6.tgz#7a5f82c6fa29959b12f708213be6de8ec0b79338"
@@ -9439,11 +9446,6 @@ react-icons@^3.10.0:
   dependencies:
     camelcase "^5.0.0"
 
-react-image@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.npm.taobao.org/react-image/download/react-image-4.0.2.tgz#5ecbe83cfe9c706a44f34a02ab893c5ee6f709a2"
-  integrity sha1-XsvoPP6ccGpE80oCq4k8Xub3CaI=
-
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -9489,6 +9491,14 @@ react-side-effect@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/react-side-effect/download/react-side-effect-2.1.0.tgz#1ce4a8b4445168c487ed24dab886421f74d380d3"
   integrity sha1-HOSotERRaMSH7STauIZCH3TTgNM=
+
+react-spring@^8.0.27:
+  version "8.0.27"
+  resolved "https://registry.npm.taobao.org/react-spring/download/react-spring-8.0.27.tgz#97d4dee677f41e0b2adcb696f3839680a3aa356a"
+  integrity sha1-l9Te5nf0Hgsq3LaW84OWgKOqNWo=
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    prop-types "^15.5.8"
 
 react-text-loop@^2.3.0:
   version "2.3.0"
