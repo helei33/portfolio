@@ -25,12 +25,12 @@ export default function Home() {
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>
               <div className="section">
-                <Develop />
+                <Develop fullpageApi={fullpageApi} />
                 <Social />
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>
               <div className="section">
-                <Design />
+                <Design fullpageApi={fullpageApi} />
                 <Social />
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>
