@@ -3,8 +3,8 @@ import Develop from "../components/develop";
 import Arrow from "../components/arrow";
 
 export default (props) => {
+  console.log(document.location.hash, "document.location.hash1");
   if (!document.location.hash) {
-    console.log(document.location.hash, "document.location.hash1");
     return <div></div>;
   }
   return (
