@@ -10,7 +10,6 @@ import "swiper/swiper.scss";
 import ReactFullpage from "@fullpage/react-fullpage";
 SwiperCore.use([Mousewheel]);
 export default function Home() {
-  const [page, setPage] = useState(0);
   return (
     <Layout>
       <ReactFullpage
@@ -26,12 +25,12 @@ export default function Home() {
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>
               <div className="section">
-                {document.location.hash ? <Develop /> : <div></div>}
+                <Develop />
                 <Social />
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>
               <div className="section">
-                {document.location.hash ? <Design /> : <div></div>}
+                <Design />
                 <Social />
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>
