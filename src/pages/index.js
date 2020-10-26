@@ -26,12 +26,12 @@ export default function Home() {
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>
               <div className="section">
-                <Develop />
+                {document.location.hash ? <Develop /> : <div></div>}
                 <Social />
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>
               <div className="section">
-                <Design />
+                {document.location.hash ? <Design /> : <div></div>}
                 <Social />
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>

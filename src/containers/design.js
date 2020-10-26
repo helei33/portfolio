@@ -2,6 +2,7 @@ import React from "react";
 import Design from "../components/design";
 export default (props) => {
   if (!document.location.hash) {
+    console.log(document.location.hash, "document.location.hash1");
     return <div></div>;
   }
   return (
