@@ -3,9 +3,7 @@ import Develop from "../components/develop";
 import Arrow from "../components/arrow";
 
 export default (props) => {
-  if (
-    props.fullpageApi 
-  ) {
+  if (props.fullpageApi) {
     return (
       <div className="develop-container">
         <div className="develop-title-container">
@@ -25,5 +23,5 @@ export default (props) => {
       </div>
     );
   }
-  return <div></div>
+  return <div></div>;
 };

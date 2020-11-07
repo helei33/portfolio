@@ -64,3 +64,18 @@
   bottom: -80px;
   right: 40px;
 }
+.fp-scroller {
+  height: 100%;
+}
+.develop-container {
+  position: absolute;
+  top: 15px;
+  width: 100vw;
+}
+/* .swiper-wrapper {
+  position: absolute;
+  left: 0px;
+}
+.swiper-container {
+  margin-left: 0px !important;
+} */
