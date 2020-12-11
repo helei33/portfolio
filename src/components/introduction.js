@@ -14,7 +14,7 @@ export default () => {
           color="#5216CE"
         >
           <span>嗨! 我的名字是 </span>
-          <span style={{ color: "#5216CE" }}>郭亮</span>
+          <span style={{ color: "#5216CE" }}>Troye</span>
         </BlockRevealAnimation>
       </div>
       <div>

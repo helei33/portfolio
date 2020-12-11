@@ -1,10 +1,6 @@
 <h1 align="center">个人简历网站</h1>
 <h3 align="center">基于Gatsby.js开发的个人简历网站</h3>
 
-### 预览
-
-<img src="https://i.loli.net/2020/07/10/AluVFksdj6UNr4y.png">
-
 ### 网站介绍
 
 网站包括首页个人简介，项目展示，设计展示三部分。主题炫酷，实用美观，适合程序员，设计师使用。
