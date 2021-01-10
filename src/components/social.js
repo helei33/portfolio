@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/social.module.css";
 import { RiDribbbleLine } from "react-icons/ri";
 import { AiOutlineGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { Tooltip } from "react-tippy";
 const copy = require("copy-text-to-clipboard");
@@ -40,13 +40,13 @@ export default () => {
         </li>
       </a>
       <a
-        href="https://www.linkedin.com/in/troyeguo/"
+        href="https://www.behance.net/a22370262185571"
         target="_blank"
         rel="noopener noreferrer"
       >
         <li className={styles.button_bg}>
           <div className={styles.button_mask}>
-            <FaLinkedinIn color="white" size="1.2rem" />
+            <FaBehance color="white" size="1.2rem" />
           </div>
         </li>
       </a>

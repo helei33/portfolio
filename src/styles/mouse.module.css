@@ -1,0 +1,32 @@
+.mouse_container {
+  width: 80px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+.mouse {
+  margin-top: 20px;
+  position: relative;
+  left: 1px;
+  animation-name: clickme;
+  animation-delay: 0s;
+  animation-duration: 2.5s;
+  /* animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5); */
+  animation-iteration-count: infinite;
+  transform-origin: 50% 20.5px;
+  will-change: transform;
+}
+@keyframes clickme {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateX(-66px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

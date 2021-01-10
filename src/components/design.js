@@ -66,7 +66,11 @@ export default (props) => {
       <div className={styles.desgin_container}>
         <div className="design-title-text">DESIGN</div>
         <div>
-          <Swiper spaceBetween={40} virtual slidesPerView={2.7}>
+          <Swiper
+            spaceBetween={0}
+            virtual
+            slidesPerView={(document.body.clientWidth - 200) / 420}
+          >
             {data.allDesignJson.edges.map(({ node }, i) => (
               <SwiperSlide key={i} virtualIndex={i}>
                 <div

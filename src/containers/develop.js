@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Develop from "../components/develop";
-import Arrow from "../components/arrow";
+import Mouse from "../components/mouse";
 
 export default (props) => {
+  const [click, setClick] = useState(false);
   if (props.fullpageApi) {
     return (
       <div className="develop-container">
@@ -14,11 +15,18 @@ export default (props) => {
           />
           <div className="develop-title-text">DEVELOP</div>
         </div>
-        <div style={{ position: "relative", top: "60px" }}>
+        <div
+          style={{ position: "relative", top: "60px" }}
+          onClick={() => {
+            setClick(true);
+          }}
+        >
           <Develop />
-          <div className="develop-arrow">
-            <Arrow />
-          </div>
+          {!click && (
+            <div className="develop-mouse">
+              <Mouse />
+            </div>
+          )}
         </div>
       </div>
     );

@@ -28,15 +28,6 @@
   },
   {
     "value": {
-      "name": "Soundify",
-      "github": "https://github.com/troyeguo/soundify",
-      "detail": "使用 Next.js 开发，具有个性化的界面设计，涵盖 Spotify 的大部分功能",
-      "description": "基于 Spotify API 开发的网页音乐播放器",
-      "illustration": "/images/illustration/coodo.png"
-    }
-  },
-  {
-    "value": {
       "name": "Koodo Reader 网站",
       "github": "https://github.com/troyeguo/website-for-koodo-reader",
       "detail": "使用 Next.js 实现服务端渲染，使用 Bootstrap 实现响应式，i18n实现国际化",

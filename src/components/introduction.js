@@ -43,7 +43,7 @@ export default () => {
           </span>
           &nbsp;
           <span style={{ color: "#5216CE" }}>
-            <TextLoop interval={800} delay={2000}>
+            <TextLoop interval={800} delay={4000}>
               {[
                 "Javascript",
                 "Typescript",

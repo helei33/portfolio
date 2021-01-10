@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useSpring, animated as a } from "react-spring";
 import SwiperCore, { Virtual } from "swiper";
 import "swiper/swiper.scss";
-import Arrow from "../components/arrow";
 
 SwiperCore.use([Virtual]);
 export default () => {
@@ -51,7 +50,11 @@ export default () => {
   `);
 
   return (
-    <Swiper spaceBetween={20} slidesPerView={2.8} virtual>
+    <Swiper
+      spaceBetween={20}
+      slidesPerView={(document.body.clientWidth - 400) / 300}
+      virtual
+    >
       {data.allProjectsJson.edges.map(({ node }, i) => (
         <SwiperSlide key={i} virtualIndex={i}>
           <a.div
@@ -68,6 +71,7 @@ export default () => {
             onMouseLeave={() => {
               setCard({ xys: [0, 0, 1] });
               setId(-1);
+              set((state) => false);
             }}
             style={id === i ? { transform: card.xys.interpolate(trans) } : {}}
             id="scroll-item"

@@ -11,10 +11,9 @@ export default (props) => {
   if (!props.data) {
     return null;
   }
-  useEffect(() => {}, []);
+
   const [index, setIndex] = useState(0);
   const [first, setFirst] = useState(true);
-  console.log(index, "index");
   return (
     <div
       className={styles.design_show_container}

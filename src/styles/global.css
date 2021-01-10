@@ -57,12 +57,12 @@
   top: 80px;
   left: calc(50vw + 105px);
 }
-.develop-arrow {
+.develop-mouse {
   margin: 0;
-  transform: rotateZ(90deg);
   position: absolute;
-  bottom: -80px;
-  right: 40px;
+  bottom: 80px;
+  left: 540px;
+  z-index: 10;
 }
 .fp-scroller {
   height: 100%;
