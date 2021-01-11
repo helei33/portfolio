@@ -51,8 +51,8 @@ export default () => {
 
   return (
     <Swiper
-      spaceBetween={20}
-      slidesPerView={(document.body.clientWidth - 400) / 300}
+      spaceBetween={0}
+      slidesPerView={(document.body.clientWidth - 400) / 320}
       virtual
     >
       {data.allProjectsJson.edges.map(({ node }, i) => (
