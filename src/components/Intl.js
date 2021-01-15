@@ -30,7 +30,10 @@ export default () => {
           languages.map((language, index) => (
             <a
               key={language}
-              onClick={() => changeLocale(language)}
+              onClick={() => {
+                changeLocale(language);
+                localStorage.setItem("lng", language);
+              }}
               style={{
                 color:
                   currentLocale === language ? `rgba(82, 22, 206, 1)` : `white`,
