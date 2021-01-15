@@ -92,7 +92,7 @@
 .swiper-container {
   margin-left: 0px !important;
 } */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .develop-title-container {
     bottom: 80px;
   }
