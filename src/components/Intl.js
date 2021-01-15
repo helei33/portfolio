@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl";
 const languageName = {
   en: "EN",
   cn: "CN",
 };
 export default () => {
+  useEffect(() => {
+    if (localStorage.getItem("lng")) {
+      changeLocale(localStorage.getItem("lng"));
+      return;
+    }
+    if (
+      navigator.language === "zh-CN" ||
+      navigator.language === "zh-SG" ||
+      navigator.language === "zh-TW" ||
+      navigator.language === "zh-HK"
+    ) {
+      changeLocale("cn");
+      localStorage.setItem("lng", "cn");
+    } else {
+      changeLocale("en");
+      localStorage.setItem("lng", "en");
+    }
+  }, []);
   return (
     <div className="intl-container">
       <IntlContextConsumer>
