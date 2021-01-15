@@ -1,7 +1,11 @@
 //顶部导航栏
 import React from "react";
 import styles from "../styles/navigator.module.css";
+import { useIntl } from "gatsby-plugin-intl";
+
 export default (props) => {
+  const intl = useIntl();
+
   const navigators = [
     { id: 0, name: "介绍", anchor: "intro" },
     { id: 1, name: "开发", anchor: "develop" },
@@ -23,7 +27,9 @@ export default (props) => {
               props.moveTo(item.anchor, index);
             }}
           ></div>
-          <div className={styles.page_text}>{item.name}</div>
+          <div className={styles.page_text}>
+            {intl.formatMessage({ id: item.name })}
+          </div>
         </li>
       );
     });

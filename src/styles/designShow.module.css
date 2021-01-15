@@ -84,3 +84,16 @@
   bottom: 60px;
   right: -5px;
 }
+@media screen and (max-width: 768px) {
+  .img_container_parent,
+  .img_container {
+    height: 50vh;
+    top: calc(25vh);
+  }
+  .img_container_parent,
+  .img_container,
+  .design_img {
+    width: 100vw;
+    left: 0px;
+  }
+}

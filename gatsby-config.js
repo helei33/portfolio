@@ -5,6 +5,19 @@ module.exports = {
     author: "Troye Guo",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        // language JSON resource path
+        path: `${__dirname}/src/intl`,
+        // supported language
+        languages: [`en`, `cn`],
+        // language file path
+        defaultLanguage: `en`,
+        // option to redirect to `/ko` when connecting `/`
+        redirect: true,
+      },
+    },
     "gatsby-plugin-react-helmet",
     `gatsby-plugin-sass`,
     {

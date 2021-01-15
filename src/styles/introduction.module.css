@@ -5,4 +5,11 @@
   line-height: 77px;
   color: rgba(255, 255, 255, 1);
   opacity: 1;
+  width: 500px;
+}
+@media screen and (max-width: 768px) {
+  .intro_container {
+    font-size: 30px;
+    margin-left: calc(50vw - 170px);
+  }
 }

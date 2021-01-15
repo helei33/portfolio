@@ -96,3 +96,10 @@
   text-align: center;
   text-overflow: ellipsis;
 }
+@media screen and (max-width: 768px) {
+  .desgin_container {
+    left: calc(50% - 195px);
+    height: 440px;
+    width: 390px;
+  }
+}

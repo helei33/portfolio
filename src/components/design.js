@@ -1,5 +1,5 @@
 //设计页面
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import styles from "../styles/design.module.css";
 import DesignShow from "./designShow";
@@ -7,10 +7,14 @@ import Slide from "react-reveal/Slide";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Virtual } from "swiper";
 import "swiper/swiper.scss";
-
+import { isMobile } from "react-device-detect";
 import { useSpring, animated as a } from "react-spring";
+import { useIntl } from "gatsby-plugin-intl";
+
 SwiperCore.use([Virtual]);
 export default (props) => {
+  const intl = useIntl();
+
   const data = useStaticQuery(graphql`
     query GetAllDesign {
       allDesignJson {
@@ -69,7 +73,9 @@ export default (props) => {
           <Swiper
             spaceBetween={0}
             virtual
-            slidesPerView={(document.body.clientWidth - 200) / 420}
+            slidesPerView={
+              isMobile ? 1 : (document.body.clientWidth - 200) / 420
+            }
           >
             {data.allDesignJson.edges.map(({ node }, i) => (
               <SwiperSlide key={i} virtualIndex={i}>
@@ -102,7 +108,7 @@ export default (props) => {
                   </a.div>
 
                   <div className={styles.design_subtitle}>
-                    {node.value.name}
+                    {intl.formatMessage({ id: node.value.name })}
                   </div>
                 </div>
               </SwiperSlide>

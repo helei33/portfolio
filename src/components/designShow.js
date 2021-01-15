@@ -1,25 +1,33 @@
 //展示设计作品
 import React, { useState, useEffect } from "react";
-import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import styles from "../styles/designShow.module.css";
 import Arrow from "../components/arrow";
 import BlockRevealAnimation from "react-block-reveal-animation";
+import { useIntl } from "gatsby-plugin-intl";
+
 export default (props) => {
   if (!props.data) {
     return null;
   }
+  const intl = useIntl();
 
+  const [loading, setLoading] = useState(true);
   const [index, setIndex] = useState(0);
   const [first, setFirst] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
   return (
     <div
       className={styles.design_show_container}
       style={index === 0 ? {} : { backgroundColor: props.data.color[index] }}
     >
-      <Fade bottom delay={700}>
+      {!loading && (
         <AiOutlineClose
           color={props.data.fontColor}
           size="2rem"
@@ -28,7 +36,8 @@ export default (props) => {
             props.setShow(false);
           }}
         />
-      </Fade>
+      )}
+
       <FiArrowLeft
         opacity={index > 0 ? 1 : 0.5}
         color={props.data.fontColor}
@@ -53,35 +62,40 @@ export default (props) => {
           setFirst(false);
         }}
       />
-      <div className={styles.design_name}>
+      <div className="design-desc-container">
+        <div className={styles.design_name}>
+          <BlockRevealAnimation
+            className="myCustomClassName"
+            delay={1.0}
+            duration={0.5}
+            color="white"
+          >
+            <span color={props.data.fontColor}>
+              {intl.formatMessage({ id: props.data.name })}
+            </span>
+          </BlockRevealAnimation>
+        </div>
+
         <BlockRevealAnimation
           className="myCustomClassName"
-          delay={1.0}
-          duration={0.5}
+          delay={0.5}
+          duration={0.7}
           color="white"
         >
-          <span color={props.data.fontColor}>{props.data.name}</span>
+          <div className={styles.line}></div>
         </BlockRevealAnimation>
+        <div className={styles.design_desc} color={props.data.fontColor}>
+          <BlockRevealAnimation
+            className="myCustomClassName"
+            delay={0.6}
+            duration={1}
+            color={props.data.color[index]}
+          >
+            {intl.formatMessage({ id: props.data.description })}
+          </BlockRevealAnimation>
+        </div>
       </div>
 
-      <BlockRevealAnimation
-        className="myCustomClassName"
-        delay={0.5}
-        duration={0.7}
-        color="white"
-      >
-        <div className={styles.line}></div>
-      </BlockRevealAnimation>
-      <div className={styles.design_desc} color={props.data.fontColor}>
-        <BlockRevealAnimation
-          className="myCustomClassName"
-          delay={0.6}
-          duration={1}
-          color={props.data.color[index]}
-        >
-          {props.data.description}
-        </BlockRevealAnimation>
-      </div>
       <div className={styles.img_container_parent}>
         <div className={styles.img_container}>
           {props.data.url.map((item, i) => {

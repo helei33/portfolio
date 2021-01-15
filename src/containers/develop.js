@@ -16,7 +16,7 @@ export default (props) => {
           <div className="develop-title-text">DEVELOP</div>
         </div>
         <div
-          style={{ position: "relative", top: "60px" }}
+          className="develop-project"
           onClick={() => {
             setClick(true);
           }}

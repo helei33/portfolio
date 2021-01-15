@@ -7,7 +7,7 @@
 .circle {
   width: 14px;
   height: 14px;
-  background: rgba(0, 0, 0, 1);
+  background: rgb(0, 0, 0);
   border: 2px solid rgba(82, 22, 206, 1);
   border-radius: 50%;
   opacity: 1;
@@ -42,4 +42,10 @@
   width: 30px;
   justify-content: center;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .link_container {
+    width: 180px;
+    left: -4px;
+  }
 }

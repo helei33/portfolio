@@ -71,7 +71,8 @@
   z-index: 12;
   position: absolute;
   bottom: 20px;
-  padding: 20px;
+  padding-bottom: 20px;
+  width: 250px;
 }
 .project_info {
   width: 100%;

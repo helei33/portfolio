@@ -7,12 +7,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useSpring, animated as a } from "react-spring";
 import SwiperCore, { Virtual } from "swiper";
 import "swiper/swiper.scss";
+import { isMobile } from "react-device-detect";
+import { useIntl } from "gatsby-plugin-intl";
 
 SwiperCore.use([Virtual]);
 export default () => {
   const [show, setShow] = useState(false);
   const [id, setId] = useState(-1);
   const [flipped, set] = useState(false);
+  const intl = useIntl();
+
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
     transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
@@ -52,7 +56,11 @@ export default () => {
   return (
     <Swiper
       spaceBetween={0}
-      slidesPerView={(document.body.clientWidth - 400) / 320}
+      slidesPerView={
+        isMobile
+          ? document.body.clientWidth / 300
+          : (document.body.clientWidth - 400) / 320
+      }
       virtual
     >
       {data.allProjectsJson.edges.map(({ node }, i) => (
@@ -92,11 +100,13 @@ export default () => {
             >
               <div>
                 <Fade bottom>
-                  <div className={styles.project_name}>{node.value.name}</div>
+                  <div className={styles.project_name}>
+                    {intl.formatMessage({ id: node.value.name })}
+                  </div>
                 </Fade>
                 <Fade bottom>
                   <div className={styles.project_detail}>
-                    {node.value.detail}
+                    {intl.formatMessage({ id: node.value.detail })}
                   </div>
                 </Fade>
 
@@ -125,7 +135,7 @@ export default () => {
               }
             >
               <div className={styles.project_desc}>
-                {node.value.description}
+                {intl.formatMessage({ id: node.value.description })}
               </div>
               <img
                 src={node.value.illustration}
