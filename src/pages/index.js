@@ -6,6 +6,7 @@ import Develop from "../containers/develop";
 import Design from "../containers/design";
 import Navigator from "../components/navigator";
 import SwiperCore, { Mousewheel } from "swiper";
+import Intl from "../components/Intl";
 import "swiper/swiper.scss";
 import ReactFullpage from "@fullpage/react-fullpage";
 SwiperCore.use([Mousewheel]);
@@ -21,7 +22,7 @@ export default function Home() {
             <div id="fullpage-wrapper">
               <div className="section">
                 <Intro />
-                <Social />
+                <Social /> <Intl />
                 {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
               </div>
               <div className="section">

@@ -76,6 +76,15 @@
   position: relative;
   top: 60px;
 }
+.intl-container {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
 /* .swiper-wrapper {
   position: absolute;
   left: 0px;
@@ -116,5 +125,9 @@
     position: relative;
     bottom: 130px;
     left: 10px;
+  }
+  .intl-container {
+    right: calc(50% - 45px);
+    bottom: 100px;
   }
 }

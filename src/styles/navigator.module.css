@@ -1,5 +1,5 @@
 .navigator_line {
-  width: 50vw;
+  width: 55vw;
   height: 0px;
   border-bottom: 2px solid rgba(82, 22, 206, 1);
   opacity: 1;
@@ -45,7 +45,7 @@
 }
 @media screen and (max-width: 768px) {
   .link_container {
-    width: 180px;
+    width: 200px;
     left: -4px;
   }
 }
