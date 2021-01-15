@@ -17,7 +17,7 @@ export default function Home() {
         scrollOverflow={true}
         anchors={["intro", "develop", "design"]}
         navigation
-        touchSensitivity={2}
+        touchSensitivity={50}
         render={({ state, fullpageApi }) => {
           return (
             <div id="fullpage-wrapper">
