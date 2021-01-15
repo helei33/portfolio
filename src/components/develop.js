@@ -110,15 +110,17 @@ export default () => {
                   </div>
                 </Fade>
 
-                <a
-                  href={node.value.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <div
+                  onClick={(event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    window.open(node.value.github);
+                  }}
                 >
                   <Fade bottom delay={100}>
                     <div className={styles.project_github}>Github地址</div>
                   </Fade>
-                </a>
+                </div>
               </div>
             </a.div>
             <a.div
