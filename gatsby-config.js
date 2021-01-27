@@ -56,9 +56,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: `gatsby-plugin-baidu-tongji`,
       options: {
-        trackingId: "UA-149740367-2",
+        // 百度统计站点ID
+        siteid: "cc4b3f01534fd7a11ae91733120ffc21",
+        // 配置统计脚本插入位置，默认值为 false, 表示插入到 body 中, 为 true 时插入脚本到 head 中
+        head: false,
       },
     },
   ],
