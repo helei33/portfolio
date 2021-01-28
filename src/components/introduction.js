@@ -33,7 +33,7 @@ export default () => {
             >
               <span>{intl.formatMessage({ id: "我" })}</span>
               <span style={{ fontFamily: "Noto Serif SC" }}>
-                {intl.formatMessage({ id: "设计" })}
+                &nbsp;{intl.formatMessage({ id: "设计" })}
               </span>
               <span> {intl.formatMessage({ id: "和开发网页和应用" })}</span>
             </BlockRevealAnimation>
@@ -47,7 +47,6 @@ export default () => {
             >
               <span
                 style={{
-                  fontSize: "30px",
                   position: "relative",
                   bottom: "2px",
                 }}

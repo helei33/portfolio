@@ -1,6 +1,6 @@
 .intro_container {
   margin-left: calc(50vw - 200px);
-  font-size: 42px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 77px;
   color: rgba(255, 255, 255, 1);
@@ -11,7 +11,7 @@
 }
 @media screen and (max-width: 768px) {
   .intro_container {
-    font-size: 30px;
+    font-size: 28px;
     margin-left: calc(50vw - 170px);
     width: 360px;
   }
