@@ -68,10 +68,7 @@ export default (props) => {
       </Slide>
 
       <div className={styles.desgin_container}>
-        <div
-          className="design-title-text"
-          style={{ fontFamily: "Noto Serif SC" }}
-        >
+        <div className="design-title-text">
           {intl.formatMessage({ id: "DESIGN" })}
         </div>
         <div>
