@@ -68,7 +68,9 @@ export default (props) => {
       </Slide>
 
       <div className={styles.desgin_container}>
-        <div className="design-title-text">DESIGN</div>
+        <div className="design-title-text">
+          {intl.formatMessage({ id: "DESIGN" })}
+        </div>
         <div>
           <Swiper
             spaceBetween={0}
