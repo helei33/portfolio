@@ -7,11 +7,13 @@
   position: relative;
   bottom: 20px;
 }
+
 .develop-title-bg {
   position: relative;
   right: 190px;
   top: 30px;
 }
+
 .develop-title-text {
   font-size: 80px;
   font-weight: 800;
@@ -74,7 +76,7 @@
 }
 .develop-project {
   position: relative;
-  top: 60px;
+  bottom: -60px;
 }
 .intl-container {
   font-size: 20px;
@@ -85,16 +87,20 @@
   cursor: pointer;
 }
 
-.swiper-container {
-  overflow: visible !important;
+/* .swiper-wrapper {
+  position: absolute;
+  left: 0px;
 }
+.swiper-container {
+  margin-left: 0px !important;
+} */
 @media screen and (max-width: 768px) {
   .develop-title-container {
     top: -120px;
   }
   .develop-title-text {
     font-size: 50px;
-    bottom: 340px;
+    bottom: 300px;
   }
   .develop-title-bg {
     right: 270px;
@@ -102,7 +108,7 @@
   .develop-project {
     position: absolute;
     left: 0px;
-    bottom: 0px;
+    bottom: 10px;
     width: 100%;
   }
   .design-title-container {

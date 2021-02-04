@@ -98,7 +98,7 @@ export default () => {
                   : { display: "none" }
               }
             >
-              <div>
+              <div >
                 <Fade bottom>
                   <div className={styles.project_name}>
                     {intl.formatMessage({ id: node.value.name })}

@@ -71,7 +71,7 @@ export default (props) => {
         <div className="design-title-text">
           {intl.formatMessage({ id: "DESIGN" })}
         </div>
-        <div>
+        <div className="design-demo">
           <Swiper
             spaceBetween={0}
             virtual

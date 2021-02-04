@@ -90,12 +90,12 @@
 .design_subtitle {
   font-size: 20px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 10px;
   color: rgba(255, 255, 255, 1);
   opacity: 1;
   text-align: center;
   text-overflow: ellipsis;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
   .desgin_container {
