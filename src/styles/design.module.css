@@ -90,16 +90,17 @@
 .design_subtitle {
   font-size: 20px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 20px;
   color: rgba(255, 255, 255, 1);
   opacity: 1;
   text-align: center;
   text-overflow: ellipsis;
+  margin-top: 15px;
 }
 @media screen and (max-width: 768px) {
   .desgin_container {
-    left: calc(50% - 195px);
+    left: 10px;
     height: 440px;
-    width: 390px;
+    width: calc(100% - 10px);
   }
 }

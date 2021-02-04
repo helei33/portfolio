@@ -21,7 +21,9 @@ export default () => {
               color="#5216CE"
             >
               <span>{intl.formatMessage({ id: "嗨! 我的名字是" })}</span>
-              <span style={{ color: "#5216CE" }}>&nbsp;Troye</span>
+              <span style={{ color: "#5216CE" }}>
+                &nbsp;{intl.formatMessage({ id: "Troye" })}
+              </span>
             </BlockRevealAnimation>
           </div>
           <div>

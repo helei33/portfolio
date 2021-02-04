@@ -1,15 +1,21 @@
-<h1 align="center">个人简历网站</h1>
-<h3 align="center">基于Gatsby.js开发的个人简历网站</h3>
+<h1 align="center">Profolio</h1>
 
-### 网站介绍
+### Preview
 
-网站包括首页个人简介，项目展示，设计展示三部分。主题炫酷，实用美观，适合程序员，设计师使用。
+<img src="https://i.loli.net/2020/07/10/AluVFksdj6UNr4y.png">
+<img src="https://i.loli.net/2020/07/10/9BTUc2Wvq1Hjfat.png">
 
-### 网站地址
+### Technique Stacks
 
-[点我前往](https://960960.xyz)
+- Gatsby.js
+- React.js
+- Swiper
 
-### 运行源码
+### Live Preview
+
+[Click to go](https://960960.xyz)
+
+### Develop
 
 ```bash
 git clone https://github.com/troyeguo/portfolio.git
@@ -18,6 +24,6 @@ yarn
 yarn develop
 ```
 
-### 帮助和反馈
+## License
 
-您可以在 issue 区提问，我会在力所能及的范围内提供帮助
+This project is licensed under the MIT license. Copyright (c) 2019-2020 App by Troye.
