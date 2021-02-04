@@ -3,9 +3,8 @@
 ### Preview
 
 <img src="https://i.loli.net/2020/07/10/AluVFksdj6UNr4y.png">
-<img src="https://i.loli.net/2020/07/10/9BTUc2Wvq1Hjfat.png">
 
-### Technique Stacks
+### Technologies Stack
 
 - Gatsby.js
 - React.js
