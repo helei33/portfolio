@@ -15,7 +15,7 @@
 }
 
 .develop-title-text {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 800;
   line-height: 96px;
   color: rgba(255, 255, 255, 1);
@@ -40,7 +40,7 @@
   transform: rotateZ(280deg) scale(1.1);
 }
 .design-title-text {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 800;
   line-height: 96px;
   color: rgba(255, 255, 255, 1);
