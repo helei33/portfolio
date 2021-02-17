@@ -101,6 +101,10 @@
   .desgin_container {
     left: 10px;
     height: 440px;
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
+  }
+  .design_item {
+    width: 100%;
+    margin: 0;
   }
 }
