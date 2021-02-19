@@ -17,7 +17,7 @@ export default (props) => {
   const [isServer, setServer] = useState(true);
   useEffect(() => {
     setServer(false);
-  }, []);
+  });
   const data = useStaticQuery(graphql`
     query GetAllDesign {
       allDesignJson {
