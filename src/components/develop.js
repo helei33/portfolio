@@ -16,7 +16,10 @@ export default () => {
   const [id, setId] = useState(-1);
   const [flipped, set] = useState(false);
   const intl = useIntl();
-
+  const [isServer, setServer] = useState(true);
+  useEffect(() => {
+    setServer(false);
+  }, []);
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
     transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
@@ -52,7 +55,9 @@ export default () => {
       }
     }
   `);
-
+  if (isServer) {
+    <div></div>;
+  }
   return (
     <Swiper
       spaceBetween={0}
@@ -98,7 +103,7 @@ export default () => {
                   : { display: "none" }
               }
             >
-              <div >
+              <div>
                 <Fade bottom>
                   <div className={styles.project_name}>
                     {intl.formatMessage({ id: node.value.name })}
