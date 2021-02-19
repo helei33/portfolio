@@ -14,8 +14,6 @@ module.exports = {
         languages: [`en`, `cn`],
         // language file path
         defaultLanguage: `cn`,
-        // option to redirect to `/ko` when connecting `/`
-        redirect: false,
       },
     },
     "gatsby-plugin-react-helmet",

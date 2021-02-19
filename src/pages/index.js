@@ -18,23 +18,24 @@ export default function Home() {
         anchors={["intro", "develop", "design"]}
         navigation
         touchSensitivity={20}
-        render={({ state, fullpageApi }) => {
+        render={() => {
           return (
             <div id="fullpage-wrapper">
               <div className="section">
                 <Intro />
                 <Social /> <Intl />
-                {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
+                <Navigator />
+              </div>
+
+              <div className="section">
+                <Develop />
+                <Social />
+                <Navigator />
               </div>
               <div className="section">
-                <Develop fullpageApi={fullpageApi} />
+                <Design />
                 <Social />
-                {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
-              </div>
-              <div className="section">
-                <Design fullpageApi={fullpageApi} />
-                <Social />
-                {fullpageApi && <Navigator moveTo={fullpageApi.moveTo} />}
+                <Navigator />
               </div>
             </div>
           );

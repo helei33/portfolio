@@ -2,7 +2,6 @@
 import React from "react";
 import styles from "../styles/navigator.module.css";
 import { useIntl } from "gatsby-plugin-intl";
-
 export default (props) => {
   const intl = useIntl();
 
@@ -12,7 +11,6 @@ export default (props) => {
     { id: 2, name: "设计", anchor: "design" },
   ];
   const renderNav = () => {
-    console.log(document.location.hash, "document.location.hash");
     return navigators.map((item, index) => {
       return (
         <li className={styles.page_link} key={item.id}>
@@ -23,9 +21,6 @@ export default (props) => {
                 ? { backgroundColor: "rgba(82, 22, 206, 1)" }
                 : {}
             }
-            onClick={() => {
-              props.moveTo(item.anchor, index);
-            }}
           ></div>
           <div className={styles.page_text}>
             {intl.formatMessage({ id: item.name })}
