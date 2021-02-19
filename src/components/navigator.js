@@ -1,10 +1,19 @@
 //顶部导航栏
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/navigator.module.css";
 import { useIntl } from "gatsby-plugin-intl";
+import { navigate } from "@reach/router";
 export default (props) => {
+  // let history = useHistory();
   const intl = useIntl();
-
+  useEffect(() => {
+    document.getElementsByTagName("dl")[0].style.backgroundColor =
+      "rgba(82, 22, 206, 1)";
+    document.getElementsByTagName("dl")[4].style.backgroundColor =
+      "rgba(82, 22, 206, 1)";
+    document.getElementsByTagName("dl")[8].style.backgroundColor =
+      "rgba(82, 22, 206, 1)";
+  }, []);
   const navigators = [
     { id: 0, name: "介绍", anchor: "intro" },
     { id: 1, name: "开发", anchor: "develop" },
@@ -14,14 +23,7 @@ export default (props) => {
     return navigators.map((item, index) => {
       return (
         <li className={styles.page_link} key={item.id}>
-          <div
-            className={styles.circle}
-            style={
-              document.location.hash.substring(1) === item.anchor
-                ? { backgroundColor: "rgba(82, 22, 206, 1)" }
-                : {}
-            }
-          ></div>
+          <dl className={styles.circle} id="circle"></dl>
           <div className={styles.page_text}>
             {intl.formatMessage({ id: item.name })}
           </div>
