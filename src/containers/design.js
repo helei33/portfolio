@@ -3,7 +3,9 @@ import Design from "../components/design";
 export default (props) => {
   const [show, setShow] = useState(false);
   useEffect(() => {
-    setShow(true);
+    setTimeout(() => {
+      setShow(true);
+    }, 500);
   }, []);
   if (!show) {
     return <div></div>;

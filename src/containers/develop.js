@@ -8,7 +8,9 @@ export default (props) => {
   const intl = useIntl();
   const [show, setShow] = useState(false);
   useEffect(() => {
-    setShow(true);
+    setTimeout(() => {
+      setShow(true);
+    }, 500);
   }, []);
   if (!show) {
     return <div></div>;
