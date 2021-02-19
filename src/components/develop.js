@@ -19,7 +19,7 @@ export default () => {
   const [isServer, setServer] = useState(true);
   useEffect(() => {
     setServer(false);
-  });
+  }, []);
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
     transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
@@ -56,7 +56,7 @@ export default () => {
     }
   `);
   if (isServer) {
-    <div></div>;
+    return <div></div>;
   }
   return (
     <Swiper

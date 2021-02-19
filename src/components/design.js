@@ -1,5 +1,5 @@
 //设计页面
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import styles from "../styles/design.module.css";
 import DesignShow from "./designShow";
@@ -17,7 +17,7 @@ export default (props) => {
   const [isServer, setServer] = useState(true);
   useEffect(() => {
     setServer(false);
-  });
+  }, []);
   const data = useStaticQuery(graphql`
     query GetAllDesign {
       allDesignJson {
@@ -54,7 +54,7 @@ export default (props) => {
   const trans = (x, y, s) =>
     `perspective(1200px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
   if (isServer) {
-    <div></div>;
+    return <div></div>;
   }
   return (
     <div style={{ overflow: "hidden" }}>
