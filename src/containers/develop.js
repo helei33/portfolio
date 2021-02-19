@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Develop from "../components/develop";
 import Mouse from "../components/mouse";
 import { useIntl, IntlContextConsumer } from "gatsby-plugin-intl";
@@ -6,7 +6,13 @@ import { useIntl, IntlContextConsumer } from "gatsby-plugin-intl";
 export default (props) => {
   const [click, setClick] = useState(false);
   const intl = useIntl();
-
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
+  if (!show) {
+    return <div></div>;
+  }
   return (
     <div className="develop-container">
       <div className="develop-title-container">

@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Design from "../components/design";
 export default (props) => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
+  if (!show) {
+    return <div></div>;
+  }
   return (
     <div style={{ height: "100vh" }}>
       <div className="design-title-container">
