@@ -28,7 +28,16 @@
         "https://i.loli.net/2021/02/20/sHJGEiz5OQNxumV.png",
         "https://i.loli.net/2021/02/20/y1hNHBT8Win9oFg.png"
       ],
-      "color": ["#3D7EE8", "#3D7EE8", "#3D7EE8", "#3D7EE8", "#3D7EE8"],
+      "color": [
+        "#3D7EE8",
+        "#3D7EE8",
+        "#3D7EE8",
+        "#3D7EE8",
+        "#3D7EE8",
+        "#585958",
+        "#585958",
+        "#585958"
+      ],
       "image": "https://i.loli.net/2020/07/03/gUevsVN74GPRQmK.png"
     }
   },
@@ -47,7 +56,15 @@
         "https://s1.ax1x.com/2020/07/04/Nxbf4P.png",
         "https://s1.ax1x.com/2020/07/04/NxbX40.png"
       ],
-      "color": ["#1C3163", "#1C3163", "#1C3163", "#1C3163", "#1C3163"],
+      "color": [
+        "#000000",
+        "#000000",
+        "#000000",
+        "#1C3163",
+        "#1C3163",
+        "#1C3163",
+        "#1C3163"
+      ],
       "image": "https://s1.ax1x.com/2020/07/04/NxbIgS.png"
     }
   },
