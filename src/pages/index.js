@@ -9,6 +9,7 @@ import SwiperCore, { Mousewheel } from "swiper";
 import Intl from "../components/Intl";
 import "swiper/swiper.scss";
 import ReactFullpage from "@fullpage/react-fullpage";
+
 SwiperCore.use([Mousewheel]);
 export default function Home() {
   return (

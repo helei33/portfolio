@@ -11,9 +11,9 @@ module.exports = {
         // language JSON resource path
         path: `${__dirname}/src/intl`,
         // supported language
-        languages: [`en`, `cn`],
+        languages: [`en`, `zh-CN`],
         // language file path
-        defaultLanguage: `cn`,
+        defaultLanguage: `zh-CN`,
       },
     },
     "gatsby-plugin-react-helmet",
