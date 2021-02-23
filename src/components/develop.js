@@ -155,7 +155,11 @@ export default () => {
               />
               <div className={styles.mask}></div>
               <img
-                src={`/images/background/background${(i + 1) % 6}.jpg`}
+                src={
+                  i !== data.allProjectsJson.edges.length - 1
+                    ? `/images/background/background${(i + 1) % 6}.jpg`
+                    : "/images/more.svg"
+                }
                 alt=""
                 className={styles.bg_image}
               />
