@@ -34,5 +34,14 @@
       "description": "个人简历网站（您正在浏览的网站）",
       "illustration": "/images/illustration/coodo.png"
     }
+  },
+  {
+    "value": {
+      "name": " ",
+      "github": "https://github.com/troyeguo?tab=repositories",
+      "detail": " ",
+      "description": " ",
+      "illustration": "/images/more.svg"
+    }
   }
 ]

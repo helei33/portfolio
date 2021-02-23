@@ -89,8 +89,12 @@ export default (props) => {
                 <div
                   className={styles.design_item}
                   onClick={() => {
-                    setShow(true);
-                    setDesignData(node.value);
+                    if (i === data.allDesignJson.edges.length - 1) {
+                      window.open("https://dribbble.com/troyeguo");
+                    } else {
+                      setShow(true);
+                      setDesignData(node.value);
+                    }
                   }}
                 >
                   <a.div

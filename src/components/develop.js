@@ -73,9 +73,13 @@ export default () => {
           <a.div
             className={styles.project_item}
             onClick={() => {
-              set((state) => !state);
-              setShow(!show);
-              setId(i);
+              if (i === data.allProjectsJson.edges.length - 1) {
+                window.open(node.value.github);
+              } else {
+                set((state) => !state);
+                setShow(!show);
+                setId(i);
+              }
             }}
             onMouseMove={({ clientX: x, clientY: y }) => {
               setCard({ xys: calc(x, y) });
@@ -123,7 +127,7 @@ export default () => {
                   }}
                 >
                   <Fade bottom delay={100}>
-                    <div className={styles.project_github}>Github地址</div>
+                    <div className={styles.project_github}>Github</div>
                   </Fade>
                 </div>
               </div>

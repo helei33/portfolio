@@ -1,10 +1,8 @@
 //顶部导航栏
 import React, { useEffect } from "react";
 import styles from "../styles/navigator.module.css";
-import { useIntl } from "gatsby-plugin-intl";
-import { navigate } from "@reach/router";
+import { useIntl, changeLocale } from "gatsby-plugin-intl";
 export default (props) => {
-  // let history = useHistory();
   const intl = useIntl();
   useEffect(() => {
     document.getElementsByTagName("dl")[0].style.backgroundColor =

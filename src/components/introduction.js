@@ -34,8 +34,10 @@ export default () => {
               color="#5216CE"
             >
               <span>{intl.formatMessage({ id: "我" })}</span>
-              <span style={{ fontFamily: "Noto Serif SC" }}>
-                &nbsp;{intl.formatMessage({ id: "设计" })}
+              <span
+                style={{ fontFamily: "Noto Serif SC", fontStyle: "italic" }}
+              >
+                {intl.formatMessage({ id: "设计" })}
               </span>
               <span> {intl.formatMessage({ id: "和开发网页和应用" })}</span>
             </BlockRevealAnimation>
