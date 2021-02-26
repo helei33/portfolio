@@ -20,7 +20,7 @@ export default () => {
               duration={0.8}
               color="#5216CE"
             >
-              <span>{intl.formatMessage({ id: "嗨! 我的名字是" })}</span>
+              <span>{intl.formatMessage({ id: "Hi! My name is" })}</span>
               <span style={{ color: "#5216CE" }}>
                 &nbsp;{intl.formatMessage({ id: "Troye" })}
               </span>
@@ -33,13 +33,18 @@ export default () => {
               duration={1}
               color="#5216CE"
             >
-              <span>{intl.formatMessage({ id: "我" })}</span>
+              <span>{intl.formatMessage({ id: "I " })}</span>
               <span
                 style={{ fontFamily: "Noto Serif SC", fontStyle: "italic" }}
               >
-                {intl.formatMessage({ id: "设计" })}
+                {intl.formatMessage({ id: "design" })}
               </span>
-              <span> {intl.formatMessage({ id: "和开发网页和应用" })}</span>
+              <span>
+                {" "}
+                {intl.formatMessage({
+                  id: "and develop website and application",
+                })}
+              </span>
             </BlockRevealAnimation>
           </div>
           <div>
@@ -55,7 +60,7 @@ export default () => {
                   bottom: "2px",
                 }}
               >
-                {intl.formatMessage({ id: "技术栈" })}
+                {intl.formatMessage({ id: "Skills" })}
               </span>
               &nbsp;
               <span style={{ color: "#5216CE" }}>

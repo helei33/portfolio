@@ -4,7 +4,7 @@ import Slide from "react-reveal/Slide";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import styles from "../styles/designShow.module.css";
-import Arrow from "../components/arrow";
+import Arrow from "./arrow";
 import BlockRevealAnimation from "react-block-reveal-animation";
 import { useIntl } from "gatsby-plugin-intl";
 

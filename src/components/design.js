@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import styles from "../styles/design.module.css";
-import DesignShow from "./designShow";
+import DesignShow from "./designSlide";
 import Slide from "react-reveal/Slide";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Virtual } from "swiper";

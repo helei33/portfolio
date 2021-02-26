@@ -1,8 +1,8 @@
 [
   {
     "value": {
-      "name": "概念海报系列",
-      "description": "为一些互联网公司设计的概念海报",
+      "name": "Conceptual posters",
+      "description": "Conceptual posters for big companies",
       "url": [
         "https://i.loli.net/2020/07/03/3wLOoaHFz4j8P1l.png",
         "https://i.loli.net/2020/07/03/9otB1Wk4eEfawAj.png",
@@ -17,7 +17,7 @@
   {
     "value": {
       "name": "Soundify",
-      "description": "个人实验项目",
+      "description": "Personal experiment project",
       "url": [
         "https://i.loli.net/2020/07/03/zvXqDiEoGYNnrZB.png",
         "https://i.loli.net/2020/07/03/gJjxqZs5y31RlHQ.png",
@@ -44,7 +44,7 @@
   {
     "value": {
       "name": "Montex",
-      "description": "个人实验项目",
+      "description": "Personal experiment project",
       "url": [
         "https://i.loli.net/2021/02/20/6IiQTWJMD2mStZF.png",
         "https://i.loli.net/2021/02/20/jXdRaO4kbtD2grM.png",
@@ -71,7 +71,7 @@
   {
     "value": {
       "name": "Pop Art",
-      "description": "个人实验项目",
+      "description": "Personal experiment project",
       "url": ["https://i.loli.net/2020/07/10/Qy6ziV4wlaPDxYA.png"],
       "color": ["#F7CABC"],
       "image": "https://i.loli.net/2020/07/10/7UrD5CzZTSxHEpR.png"

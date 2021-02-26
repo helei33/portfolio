@@ -20,7 +20,7 @@
 git clone https://github.com/troyeguo/portfolio.git
 cd portfolio
 yarn
-yarn develop
+yarn start
 ```
 
 ## License
