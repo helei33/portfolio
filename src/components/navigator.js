@@ -13,9 +13,9 @@ export default (props) => {
       "rgba(82, 22, 206, 1)";
   }, []);
   const navigators = [
-    { id: 0, name: "介绍", anchor: "intro" },
-    { id: 1, name: "开发", anchor: "develop" },
-    { id: 2, name: "设计", anchor: "design" },
+    { id: 0, name: "intro", anchor: "intro" },
+    { id: 1, name: "develop", anchor: "develop" },
+    { id: 2, name: "design", anchor: "design" },
   ];
   const renderNav = () => {
     return navigators.map((item, index) => {
