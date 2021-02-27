@@ -153,7 +153,9 @@ export default () => {
                 alt=""
                 className={styles.illustration}
               />
-              <div className={styles.mask}></div>
+              {i !== data.allProjectsJson.edges.length - 1 && (
+                <div className={styles.mask}></div>
+              )}
               <img
                 src={
                   i !== data.allProjectsJson.edges.length - 1
