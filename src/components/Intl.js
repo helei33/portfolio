@@ -11,9 +11,6 @@ export default () => {
     } else if (!navigator.language.includes("zh")) {
       changeLocale("en");
       localStorage.setItem("lng", "en");
-    } else {
-      changeLocale("zh-CN");
-      localStorage.setItem("lng", "zh-CN");
     }
   }, []);
   return (
