@@ -8,9 +8,9 @@ export default () => {
   useEffect(() => {
     if (localStorage.getItem("lng")) {
       changeLocale(localStorage.getItem("lng"));
-    } else if (!navigator.language.includes("zh")) {
-      changeLocale("en");
-      localStorage.setItem("lng", "en");
+    } else if (navigator.language.includes("zh")) {
+      changeLocale("zh-CN");
+      localStorage.setItem("lng", "zh-CN");
     }
   }, []);
   return (
